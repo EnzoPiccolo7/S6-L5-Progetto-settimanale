@@ -27,6 +27,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav w-100 justify-content-end">
+
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -42,6 +43,8 @@
                         <li class="nav-item"><a class="nav-link" href="#"><i class="bi-twitch"></i></a></li>
                         <li class="nav-item"><a class="nav-link" href="#"><i class="bi-discord"></i></a></li>
                         <li class="nav-item"><a class="nav-link" href="#"><i class="bi-whatsapp"></i></a></li>
+                        <li class="nav-item">Theme:      </li>
+                        <li class="nav-item" ><button type="button" class="btn btn-dark" onclick="tema()" >Dark</button></li>
                     </ul>
                 </div>
             </div>
@@ -89,7 +92,7 @@
 
         <!-- Inserisco la sezione delle partnerships -->
         <section id="partnerships" class="partnerships">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <!-- <path fill="#f5f5f5" fill-opacity="1"
                     d="M0,96L60,90.7C120,85,240,75,360,69.3C480,64,600,64,720,90.7C840,117,960,171,1080,170.7C1200,171,1320,117,1380,90.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
                 </path> -->
@@ -112,7 +115,7 @@
                             class="img-fluid"></div>
                 </div>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#f5f5f5" fill-opacity="1"
                     d="M0,96L60,90.7C120,85,240,75,360,69.3C480,64,600,64,720,90.7C840,117,960,171,1080,170.7C1200,171,1320,117,1380,90.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
                 </path>
@@ -209,7 +212,8 @@
 
     </main>
 
-    <footer class="footer mt-auto py-3 text-light">
+    <footer class="foote" >
+        <div class="footer mt-auto py-3">
         <div class="container text-center">
             <div class="row py-4">
                 <div class="col-md-3 py-4">
@@ -236,8 +240,10 @@
             </div>
             <span class="text-light">&copy; Alessio per Epicode School </span>
         </div>
+    </div>
     </footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

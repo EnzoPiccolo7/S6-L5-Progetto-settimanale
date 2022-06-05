@@ -11971,6 +11971,24 @@ svg {
   background: linear-gradient(90deg, #ff0101 0%, #ff7c00 71%);
 }
 
+li.nav-item:nth-child(5) {
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 0.026em;
+}
+
+.navbar-brand {
+  color: rgba(255, 255, 255, 0.55) !important;
+}
+
+a.active {
+  color: rgba(255, 255, 255, 0.55) !important;
+}
+
+li.nav-item:nth-child(5) {
+  color: rgba(255, 255, 255, 0.55);
+}
+
 section .container h1, section .container .h1 {
   font-size: 3.3rem;
   padding-top: 4rem;
@@ -11993,6 +12011,11 @@ section .container a {
 section .container a:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+button.btn {
+  padding: 0px 8px;
+  margin-left: 0.5rem;
 }
 
 .btn {
@@ -12057,5 +12080,19 @@ div.container:nth-child(2) > div:nth-child(1) > h4:nth-child(1), div.container:n
 .footer {
   background: -webkit-gradient(linear, left top, right top, from(#ff0101), color-stop(71%, #ff7c00));
   background: linear-gradient(90deg, #ff0101 0%, #ff7c00 71%);
+  /*     @include testocolorato();
+ */
+}
+
+.dark {
+  color: antiquewhite !important;
+  /*     background: rgb(0,0,0) !important; 
+ */
+  background: -webkit-gradient(linear, left top, right top, from(black), color-stop(80%, #989898)) !important;
+  background: linear-gradient(90deg, black 0%, #989898 80%) !important;
+  /*     color: $testo;
+ */
+  -webkit-transition: 2s cubic-bezier(0.37, -1.04, 0.71, 0.65);
+  transition: 2s cubic-bezier(0.37, -1.04, 0.71, 0.65);
 }
 /*# sourceMappingURL=custom.css.map */

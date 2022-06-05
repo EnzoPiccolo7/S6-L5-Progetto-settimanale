@@ -1,0 +1,8 @@
+@mixin testocolorato($back1 : (linear-gradient(90deg, #ff0101 0%, #ff7c00 71%))){
+    @if ($back1: true)  {
+        color: $testo ;
+    } @else if ($back1: false) {
+        color: $testo;
+    }
+    
+} 

@@ -1,22 +1,40 @@
+$color :rgba(255, 255, 255, 0.55);   
+$back1 : linear-gradient(90deg, #ff0101 0%, #ff7c00 71%);
+$back2 : linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(152,152,152,1) 80%) !important; 
+$testo : antiquewhite !important;
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import 'variables';
 @import 'function';
 
 @mixin background {
-    background: -webkit-gradient(linear, left top, right top, from(#ff0101), color-stop(71%, #ff7c00));
-    background: linear-gradient(90deg, #ff0101 0%, #ff7c00 71%);
+    background: $back1;
 }
 .first-cta, .services {
-    @include background()
+    @include background();
 }
 .partnerships {
-    @include background()
+    @include background();
 
 }
 svg  {
-    @include background()
-
+    @include background();
 }
+li.nav-item:nth-child(5) {
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 0.026em;
+   }
+  .navbar-brand {
+    color:$color !important ;
+  }  
+  a.active {
+    color: $color !important;
+  }  
+  li.nav-item:nth-child(5) {
+    color:$color ;
+  }
+  
+   
 section .container {
     h1 {
         font-size: 3.3rem;
@@ -39,6 +57,11 @@ section .container {
     
     
 }
+button.btn {
+    padding: 0px 8px;
+    margin-left: 0.5rem;
+   }
+   
 .btn {
     border: 2px solid black;
     box-shadow: 4px 3px 6px black;
@@ -95,7 +118,17 @@ section .container {
     font-weight: 400;
    }
    .footer {
-    @include background()
+    background: linear-gradient(90deg, #ff0101 0%, #ff7c00 71%);
+/*     @include testocolorato();
+ */
+   }
+   .dark {
+    @include testocolorato();
+
+/*     background: rgb(0,0,0) !important; 
+ */    background: $back2; 
+/*     color: $testo;
+ */    transition: 2s cubic-bezier(0.37, -1.04, 0.71, 0.65);
    }
    
    

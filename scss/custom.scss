@@ -1,0 +1,102 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'variables';
+@import 'function';
+
+@mixin background {
+    background: -webkit-gradient(linear, left top, right top, from(#ff0101), color-stop(71%, #ff7c00));
+    background: linear-gradient(90deg, #ff0101 0%, #ff7c00 71%);
+}
+.first-cta, .services {
+    @include background()
+}
+.partnerships {
+    @include background()
+
+}
+svg  {
+    @include background()
+
+}
+section .container {
+    h1 {
+        font-size: 3.3rem;
+        padding-top: 4rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
+        text-shadow: 1px 9px 32px black;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 1.6rem;
+    }
+    a {
+        margin: 4rem 0;
+        transition:  1.3s cubic-bezier(.37,-1.04,.71,.65);
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+    
+    
+}
+.btn {
+    border: 2px solid black;
+    box-shadow: 4px 3px 6px black;
+    font-size: 1.3rem;
+   }
+   
+.services .container {
+    .col-md-4 {
+        text-align: center;
+        margin-bottom: 2rem;
+        
+            &:hover {
+                background: rgba(0, 0, 0, 0.756);
+                border-radius: 10%;
+                color: aliceblue;
+            }
+    }
+    
+    i {
+        font-size: 3rem;
+    }
+}
+
+#services > div:nth-child(1) {
+    z-index: 10;
+    position: relative;
+  }
+    
+  #partnerships > svg:nth-child(1) > path:nth-child(1) {
+    position: relative;
+    z-index: 1;
+    top: 179px;
+    padding-top: 0px;
+  }
+    
+  #partnerships {
+    margin-top: -138px;
+  }
+  div.container:nth-child(2) {
+    padding-bottom: 3rem;
+   }
+   div.container:nth-child(2) > div:nth-child(1) > h4:nth-child(1) {
+    font-size: 4rem;
+    line-height: 1.6;
+    letter-spacing: 0.296em;
+    font-weight: 500;
+   }
+   #reviews {
+    background-color: #f5f5f5;
+   }
+   .py-5 > h4:nth-child(1) {
+    line-height: 1.2;
+    letter-spacing: 0.104em;
+    font-weight: 400;
+   }
+   .footer {
+    @include background()
+   }
+   
+   
+   
